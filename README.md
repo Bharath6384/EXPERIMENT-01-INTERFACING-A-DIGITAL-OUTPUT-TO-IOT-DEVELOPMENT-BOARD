@@ -2,13 +2,13 @@
 
 
 **DATE:**
-
+14/9/2025
 **NAME:**
-
+BHARATH S
 **ROLL NO:**
-
+212224100006
 **DEPARTMENT:**
-
+CSE(Cyber security)
 ## Aim
 
 To Interface a Digital output (LED) to ARM IOT development board and write a program to blink an LED.
@@ -99,10 +99,29 @@ With its power-efficient design, built-in LoRaWAN support, and flexible communic
 ## STM 32 CUBE PROGRAM
 
 ```
-// Your STM 32 CUBE Program code here
+#include "main.h"
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+int main(void)
+{
+    SystemClock_Config();
+    MX_GPIO_Init();
+    while (1)
+    {
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+        HAL_Delay(5000);
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+        HAL_Delay(5000);
+    }
+}
 ```
 
 ## OUTPUT
+**LOAD ON**
+![WhatsApp Image 2025-08-14 at 15 43 04_abc07bb9](https://github.com/user-attachments/assets/5b5045f1-32f0-4c42-aa79-188358a92471)
+**LOAD OFF**
+![WhatsApp Image 2025-08-14 at 15 43 04_7812e9b7](https://github.com/user-attachments/assets/d0206f4f-4590-420b-96e1-186bc3be4ef2)
+
 
 ## Result
 
