@@ -117,9 +117,9 @@ int main(void)
 ```
 
 ## OUTPUT
-**LOAD ON**
+**RELAY ON**
 ![WhatsApp Image 2025-08-14 at 15 43 04_abc07bb9](https://github.com/user-attachments/assets/5b5045f1-32f0-4c42-aa79-188358a92471)
-**LOAD OFF**
+**RELAY OFF**
 ![WhatsApp Image 2025-08-14 at 15 43 04_7812e9b7](https://github.com/user-attachments/assets/d0206f4f-4590-420b-96e1-186bc3be4ef2)
 
 
